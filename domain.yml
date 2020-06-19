@@ -1,0 +1,39 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- create_event
+- event_value
+- create_event_complete
+- negotiate
+- confirm
+entities:
+- type_event
+responses:
+  utter_greet:
+  - text: Hey! Welcome to PRO-EVE event management digital service platform. How can
+      we help You?
+  utter_type:
+  - text: Can u specify the event type that u want to get organized?
+  utter_details:
+  - text: These are the dates available and the cost is 10000
+  utter_negotiation:
+  - text: Okay sir we can provide you a discount of upto 10%
+  utter_affirm:
+  - text: should we confirm the booking?
+  utter_book:
+  - text: Booking confirmed. Details will be sent to your registered email address
+  utter_goodbye:
+  - text: Thank you for using our digital service platform. Have a nice day!
+actions:
+- utter_greet
+- utter_type
+- utter_details
+- utter_negotiation
+- utter_affirm
+- utter_book
+- utter_goodbye
